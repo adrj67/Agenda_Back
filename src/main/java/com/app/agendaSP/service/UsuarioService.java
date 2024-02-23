@@ -38,6 +38,7 @@ public class UsuarioService {
     //guarda y actualiza
     @PostMapping(path = "/guardar")
     public Usuario saveUsuario (@RequestBody Usuario usuario){
+       
         return usuarioRepository.save(usuario);
     }
     
